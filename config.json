@@ -1,0 +1,68 @@
+{
+  "_comment": "The only file you need to edit. Everything else is generated.",
+
+  "login": "bhavytaggarwal",
+  "wordmark": ["Bhavyt", "Aggarwal"],
+
+  "links": [
+    { "label": "linkedin", "url": "https://www.linkedin.com/in/CHANGE-ME/" },
+    { "label": "email", "url": "mailto:CHANGE-ME@example.com" }
+  ],
+
+  "about": {
+    "quote": [
+      "Backend-leaning full-stack, mostly Python and Go.",
+      "Production systems over side projects."
+    ],
+    "body": [
+      "I build multi-tenant web services — Django and DRF on Postgres, React on",
+      "the front end, Go when something needs to be small and fast.",
+      "",
+      "Most of my work is private client code, so what's below is the public",
+      "slice: self-contained things I can show end to end."
+    ]
+  },
+
+  "stack": "python django drf postgres redis celery react typescript vite go docker git",
+
+  "projects": [
+    {
+      "name": "idempotency",
+      "url": "",
+      "private": true,
+      "tags": "go, stdlib only",
+      "description": [
+        "HTTP middleware that makes unsafe requests replay-safe: key scoping,",
+        "in-flight request collapsing, and cached response replay. No dependencies."
+      ]
+    },
+    {
+      "name": "bhavytaggarwal",
+      "url": "https://github.com/bhavytaggarwal/bhavytaggarwal",
+      "private": false,
+      "tags": "python, svg",
+      "description": [
+        "This page. Draws its own graphics from the GitHub GraphQL API on a",
+        "schedule and commits only what changed."
+      ]
+    },
+    {
+      "_comment": "Copy this block for each project you add. Drop \"url\" or leave it empty for private work — the entry still renders, just without a link.",
+      "name": "PROJECT NAME",
+      "url": "",
+      "private": false,
+      "tags": "language, framework",
+      "description": [
+        "One or two lines. Say what it does and the one technical decision worth",
+        "asking you about in an interview."
+      ]
+    }
+  ],
+
+  "stats": {
+    "_comment": "Turn these on once the contribution graph has something in it.",
+    "year": true,
+    "streak": false,
+    "languages": false
+  }
+}

@@ -1,0 +1,60 @@
+name: profile
+
+on:
+  schedule:
+    # 06:17 UTC daily. Deliberately off the hour — GitHub's scheduler is
+    # best-effort and the top of every hour is the most contended slot.
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "config.json"
+      - "scripts/**"
+      - ".github/workflows/profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Generate
+        env:
+          # The default token sees your public activity and — importantly —
+          # attributes the commit below to github-actions[bot], so this job does
+          # not inflate the contribution graph it is drawing.
+          #
+          # For private contributions in the totals, create a classic PAT with
+          # read:user, save it as the PROFILE_TOKEN secret, and enable
+          # "Include private contributions on my profile" in your GitHub
+          # settings. Commits stay under GITHUB_TOKEN either way.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: python scripts/generate.py
+
+      - name: Commit what changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "nothing moved today"
+            exit 0
+          fi
+          git add -A
+          git commit -m "profile: refresh graphics"
+          git push
