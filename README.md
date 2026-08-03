@@ -1,6 +1,6 @@
 ![](wordmark.svg)
 
-[linkedin](https://www.linkedin.com/in/CHANGE-ME/) · [email](mailto:CHANGE-ME@example.com)
+[linkedin](http://linkedin.com/in/bhavyta-aggarwal/) · [email](mailto:bhavytaggarwal@gmail.com)
 
 ![](hd-about.svg)
 > Backend-leaning full-stack, mostly Python and Go.
@@ -18,17 +18,17 @@ slice: self-contained things I can show end to end.
 
 ![](hd-projects.svg)
 
-**idempotency** `private` · `go, stdlib only`  
-HTTP middleware that makes unsafe requests replay-safe: key scoping,  
-in-flight request collapsing, and cached response replay. No dependencies.
+**[Gearmind](https://github.com/bhavytaggarwal/gearmind-admin)** `private` · `python, react-native`  
+Architected an offline-first iOS application utilizing a Store and Forward data pipeline and custom CoreLocation filtering algorithms to eliminate GPS drift and ensure high accuracy in high-frequency ride tracking  
+Designed a robust session state machine to synchronize real-time data collection with an administrative dashboard, automating lead generation for specialized service centers via integrated messaging API  
+Integrated AI-driven diagnostic workflows (AI Clinic) and intelligent upgrade recommendations, utilizing LLM APIs to analyze mechanical symptoms and dynamically route users to relevant inventory SKUs and service centers
 
 **[bhavytaggarwal](https://github.com/bhavytaggarwal/bhavytaggarwal)** · `python, svg`  
 This page. Draws its own graphics from the GitHub GraphQL API on a  
 schedule and commits only what changed.
 
-**PROJECT NAME** · `language, framework`  
-One or two lines. Say what it does and the one technical decision worth  
-asking you about in an interview.
+**[Travel on Beat](https://github.com/bhavytaggarwal/Travel-on-Beat)** · `javascript, nextjs`  
+Travel on Beat is a AI travel app that curates your travel plan based on your interests and music genre. Plan Your Journey, Follow the Music!
 
 ![](hd-stats.svg)
 
