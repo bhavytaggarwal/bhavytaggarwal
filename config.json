@@ -2,11 +2,11 @@
   "_comment": "The only file you need to edit. Everything else is generated.",
 
   "login": "bhavytaggarwal",
-  "wordmark": ["Bhavyt", "Aggarwal"],
+  "wordmark": ["Bhavyta", "Aggarwal"],
 
   "links": [
-    { "label": "linkedin", "url": "https://www.linkedin.com/in/CHANGE-ME/" },
-    { "label": "email", "url": "mailto:CHANGE-ME@example.com" }
+    { "label": "linkedin", "url": "http://linkedin.com/in/bhavyta-aggarwal/" },
+    { "label": "email", "url": "mailto:bhavytaggarwal@gmail.com" }
   ],
 
   "about": {
@@ -27,13 +27,23 @@
 
   "projects": [
     {
-      "name": "idempotency",
-      "url": "",
+      "name": "Gearmind",
+      "url": "https://github.com/bhavytaggarwal/gearmind-admin",
       "private": true,
-      "tags": "go, stdlib only",
+      "tags": "python, react-native",
       "description": [
-        "HTTP middleware that makes unsafe requests replay-safe: key scoping,",
-        "in-flight request collapsing, and cached response replay. No dependencies."
+"Architected an offline-first iOS application utilizing a "Store and Forward" data pipeline and custom CoreLocation filtering algorithms to eliminate GPS drift and ensure high accuracy in high-frequency ride tracking",
+"Designed a robust session state machine to synchronize real-time data collection with an administrative dashboard, automating lead generation for specialized service centers via integrated messaging API",
+"Integrated AI-driven diagnostic workflows (AI Clinic) and intelligent upgrade recommendations, utilizing LLM APIs to analyze mechanical symptoms and dynamically route users to relevant inventory SKUs and service centers"
+      ]
+    },
+    {
+      "name": "bhavytaggarwal",
+      "url": "https://github.com/bhavytaggarwal/Travel-on-Beat",
+      "private": false,
+      "tags": "python, svg",
+      "description": [
+        "Travel on Beat is an AI travel app that curates your travel plan based on your interests and music genre. Plan Your Journey, Follow the Music!"
       ]
     },
     {
