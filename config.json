@@ -38,15 +38,15 @@
       ]
     },
     {
-      "name": "bhavytaggarwal",
-      "url": "https://github.com/bhavytaggarwal/bhavytaggarwal",
+      "name": "wall-jukebox",
+      "url": "https://github.com/bhavytaggarwal/wall-jukebox",
       "private": false,
-      "tags": "python, svg",
+      "tags": "python, projective geometry",
       "description": [
-        "This page. Draws its own graphics from the GitHub GraphQL API on a",
-        "schedule and commits only what changed."
-      ]
-    },
+        "Projector turns a wall of album posters into a jukebox: click one, it plays.",
+        "Two homographies handle the room corner, so the poster map survives moving the projector."
+     ]
+   },
     {
       "name": "Travel on Beat",
       "url": "https://github.com/bhavytaggarwal/Travel-on-Beat",
