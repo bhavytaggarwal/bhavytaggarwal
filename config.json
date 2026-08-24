@@ -48,6 +48,16 @@
      ]
    },
     {
+  "name": "dispute-triage",
+  "url": "https://github.com/bhavytaggarwal/dispute-triage",
+  "private": false,
+  "tags": "python, llm tooling, evals",
+  "description": [
+    "Agent that classifies card disputes against reason codes, with a full audit trace per decision.",
+    "Deterministic rules override the model on deadlines and thresholds; evaluated against a labelled set."
+  ]
+},
+    {
       "name": "Travel on Beat",
       "url": "https://github.com/bhavytaggarwal/Travel-on-Beat",
       "private": false,
