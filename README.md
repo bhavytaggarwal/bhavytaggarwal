@@ -27,6 +27,10 @@ Integrated AI-driven diagnostic workflows (AI Clinic) and intelligent upgrade re
 Projector turns a wall of album posters into a jukebox: click one, it plays.  
 Two homographies handle the room corner, so the poster map survives moving the projector.
 
+**[dispute-triage](https://github.com/bhavytaggarwal/dispute-triage)** · `python, llm tooling, evals`  
+Agent that classifies card disputes against reason codes, with a full audit trace per decision.  
+Deterministic rules override the model on deadlines and thresholds; evaluated against a labelled set.
+
 **[Travel on Beat](https://github.com/bhavytaggarwal/Travel-on-Beat)** · `javascript, nextjs`  
 Travel on Beat is a AI travel app that curates your travel plan based on your interests and music genre. Plan Your Journey, Follow the Music!
 
